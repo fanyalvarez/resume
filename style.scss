@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+$pink : rgb(240, 227, 233);
+$pinkDark: rgb(241, 199, 218);
+$red: rgb(175, 121, 121);
+$textsize: 17px;
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 20px;
+}
+
+.portada {
+    height: 95vh;
+    background-color: $pink;
+    text-align: center;
+
+    div {
+        // background-color: brown;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        padding: 10px;
+        margin: 2px;
+        font-size: 70px;
+        letter-spacing: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+    }
+
+    p {
+        padding: 10px;
+        margin: 2px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 9em;
+        font-weight: 100;
+    }
+}
+
+.content {
+    margin: 10%;
+    padding: 20px 0;
+    height: 25vh;
+
+    .one {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 15%;
+    }
+
+    .two {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 18%;
+    }
+
+    .three {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 15%;
+    }
+
+    p {
+        border-radius: 15px;
+        background-color: $pink;
+        margin: 10px;
+        padding: 20px;
+        font-size: $textsize;
+        cursor: pointer;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 20px;
+    margin: 7% 4%;
+
+    aside {
+        height: fit-content;
+        margin: 4% 0;
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            border-radius: 30%;
+            border: 7px solid rgb(185, 99, 99);
+        }
+    }
+
+    div {
+        padding: 0;
+        margin: 0 30px;
+
+        .hello {
+            color: $pinkDark;
+            font-weight: 900;
+            font-size: 4em;
+            margin: 0 25px 35px;
+        }
+
+        .description {
+            font-size: 22px;
+            text-align: justify;
+            margin: 22px 12%;
+        }
+    }
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-weight: 900;
+        font-size: 5em;
+        color: $red;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    i {
+        background-color: $red;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+        font-size: $textsize;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
