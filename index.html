@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <section class="portada">
-        <div>
+    <a name="start"></a>
+    <section class="front">
+        <div class="letters">
             <h1 class="title">Portafolio</h1>
-            <p class="name">Estefania Alvarez</p>
+            <p class="title-name">Estefania Alvarez</p>
         </div>
     </section>
-    <div class="row">
+    <div class="arrow">
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929"
             style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
@@ -36,38 +37,56 @@
             </g>
         </svg>
     </div>
-    <section class="content">
-        <div class="one">
-            <p>Skills</p>
-            <p>Contacto</p>
-
+    <section class="contents">
+        <div class="container-one">
+            <a href="#skills">
+                <p>Skills</p>
+            </a>
+            <a href="#contactme">
+                <p>Contacto</p>
+            </a>
         </div>
-        <div class="two">
-            <p>Educacion</p>
-            <p>Sobre mi</p>
-            <p>Soft skills</p>
+        <div class="container-two">
+            <a href="#education">
+                <p>Educacion</p>
+            </a>
+            <a href="#start">
+                <p>Inicio</p>
+            </a>
+            <a href="#aboutme">
+                <p>Sobre mi</p>
+            </a>
         </div>
-        <div class="three">
-            <p>Experiencia</p>
-            <p>Certificaciones</p>
+        <div class="container-three">
+            <a href="#projects">
+                <p>Proyectos</p>
+            </a>
+            <a href="#certificate">
+                <p>Certificaciones</p>
+            </a>
         </div>
     </section>
+    <a name="aboutme"></a>
     <section class="aboutme">
-        <aside class="photo">
+        <div class="container-photo">
             <img src="/img/20220309_155446.jpg" alt="me" class="center">
-        </aside>
+        </div>
         <div>
-            <h2 class="hello">Hello!</h2>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consectetur
-                accusantium necessitatibus exercitationem molestiae dicta odit illo quam asperiores laborum quas
-                ipsa
-                voluptate velit mollitia sapiente, blanditiis quos suscipit quasi!</p>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati consectetur
-                accusantium necessitatibus exercitationem molestiae dicta odit illo quam asperiores laborum quas
-                ipsa
-                voluptate velit mollitia sapiente, blanditiis quos suscipit quasi!</p>
+            <h2 class="hello">Hola soy Fany!!</h2>
+            <p class="description">Y te voy a contar un poco de mi para que me conozcas mas;</p>
+            <p class="description"> Soy egresada del IPN en el area de Contabilidad con una experiencia de 7 años, pero
+                hace un tiempo atras comenzo mi curiosidad en el area del desarrollo y me encanto tanto lo que vi que
+                decidi tomar un Bootcamp.</p>
+            <p class="description">
+                Y bueno hace unos meses termine mi bootcamp en la academia de Kodemia, ahora soy una egresada Fullstack
+                Developer Jr. en JavaScript y en este momento me encuentro en busca de mi primer experiencia laboral en la
+                posicion de FrontEnd ya que concidero que tengo diversas habilidades que me ayudan a desenvolverme mejor en esta
+                area como son la creatividad, curiosidad y una habilidad innata en la parte visual con la estetica, por
+                lo cual me gusta y lo disfruto el Front.</p>
         </div>
     </section>
+    <a name="skills"></a>
+    <h4>las siguientes son herramientas que he aprendido a utilizar</h4>
     <section class="skills">
         <h3>Skills</h3>
         <div class="container-skills">
@@ -218,58 +237,52 @@
             </div>
         </div>
     </section>
-    <!-- <section class="soft">
-        <h3>Soft Skills</h3>
-        <div class="container-soft">
-            <p>Resolucion de problemas</p>
-            <p>Perseverancia</p>
-            <p>Curiosodad</p>
-            <p>Creatividad</p>
+    <a name="projects"></a>
+    <h4>y con esas herrientas he podido hacer algunos de los siguientes proyectos</h4>
+    <h3 class="text-project">Proyectos</h3>
+    <section class="projects">
+        <h2>Vivero</h2>
+        <div class="container-project-img">
+            <p>Proyecto llevado acabo de forma autodidacta antes de comenzar en el bootcamp</p>
+            <a href="https://vivero-rho.vercel.app/"><img src="/img/vivero.png" alt=""></a>
         </div>
-    </section> -->
-    <h3 class="project">Proyectos</h3>
-    <section class="exper">
+        <h2>HTML Practices</h2>
+        <div class="container-project-img">
+            <p>Proyectos llevados acabo en Kodemia en el modulo de Maquetado<br>
+                los proyectos se hicieron con HTML, css y bootstrap.
+            </p>
+            <a href="https://html-steel-sigma.vercel.app/"><img src="/img/htmlpractices.png" alt=""></a>
+        </div>
         <h2>Checa y Cuadra</h2>
-        <div class="container-img">
-            <p>Proyecto realizado durante el Bootcamp de Kodemia el cual fue diseñado con:<br>
-                Front; NextJS, Material UI y el despliegue Vercel <br>
-                Back; NodeJS y Express y el despligue con AWS <br>
+        <div class="container-project-img">
+            <p>Proyecto realizado como proyecto final en el Bootcamp el cual fue diseñado con:<br>
+                Front; NextJS, Material UI y el despliegue se hizo con Vercel <br>
+                Back; NodeJS y Express y el despligue se hizo con AWS <br>
                 Base de datos; Mongo DB
             </p>
-            <a href="https://api-checaycuadra-frontend-next.vercel.app/"></a>
-            <img src="/img/checaycuadra.png" alt="">
+            <a href="https://api-checaycuadra-frontend-next.vercel.app/"><img src="/img/checaycuadra.png" alt=""></a>
         </div>
-
-        <h2>HTML Practices</h2>
-        <div class="container-img">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione!
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quos?
+        <h2>30 Days Challenge</h2>
+        <div class="container-project-img">
+            <p>Este challenge lo encontre en la pagina de dev.to<br>
+                y el cual lleve acabo para adquirir nuevos conocimientos y reforzar algunos.
             </p>
-            <a href="https://api-checaycuadra-frontend-next.vercel.app/"></a>
-            <img src="/img/htmlpractices.png" alt="">
-        </div>
-
-        <h2>30 days challenge</h2>
-        <div class="container-img">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ratione!
-                <br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quos?
-            </p>
-            <a href="https://api-checaycuadra-frontend-next.vercel.app/"></a>
-            <img src="/img/30days.png" alt="">
+            <a href="https://30-days-challenge-htmlcss.vercel.app/"><img src="/img/30days.png" alt=""></a>
         </div>
     </section>
+    <a name="education"></a>
+    <h4>he podido relizar todo lo anterior por el bootcamp y otras mas <br>
+        de forma autodidacta como este portafolio que estas viendo</h4>
     <section class="education">
         <div class="container-education">
-            <h3>Formacion <br /> Academica</h3>
+            <h3 class="edu-name">Formacion <br /> Academica</h3>
             <div class="container-edu">
                 <h4 class="text-edu">Kodemia</h4>
-                <p class="text-description">Bootcamp <br> julio 2021 a febrero 2022.</p>
+                <p class="text-description">Bootcamp <br> julio 2021 a marzo 2022.</p>
             </div>
         </div>
         <div class="container-education">
-            <h3>Idiomas</h3>
+            <h3 class="edu-name">Idiomas</h3>
             <div class="languages">
                 <div class="container-edu ">
                     <h4 class="text-edu">Español</h4>
@@ -282,8 +295,10 @@
             </div>
 
         </div>
+        <a name="education"></a>
     </section>
-    <section class="certified">
+    <a name="certificate"></a>
+    <section class="certificate">
         <h3>Certificaciones</h3>
         <div class="container-certif">
             <img src="/img/scrum.png" alt="">
@@ -291,6 +306,24 @@
             <img src="/img/ibm.png" alt="">
         </div>
     </section>
+    <a name="contactme"></a>
+    <div class="contactme">
+        <h4>Si te ha gustado mi presentacion</h4>
+        <h4 class="h4-contact">Contactame</h4>
+        <div class="arrow-contact">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929"
+                style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
+                <g>
+                    <path
+                        d="M135.899,167.877c1.902,1.902,4.093,2.851,6.567,2.851s4.661-0.948,6.562-2.851L282.082,34.829 c1.902-1.903,2.847-4.093,2.847-6.567s-0.951-4.665-2.847-6.567L267.808,7.417c-1.902-1.903-4.093-2.853-6.57-2.853 c-2.471,0-4.661,0.95-6.563,2.853L142.466,119.622L30.262,7.417c-1.903-1.903-4.093-2.853-6.567-2.853 c-2.475,0-4.665,0.95-6.567,2.853L2.856,21.695C0.95,23.597,0,25.784,0,28.262c0,2.478,0.953,4.665,2.856,6.567L135.899,167.877z" />
+                    <path
+                        d="M267.808,117.053c-1.902-1.903-4.093-2.853-6.57-2.853c-2.471,0-4.661,0.95-6.563,2.853L142.466,229.257L30.262,117.05 c-1.903-1.903-4.093-2.853-6.567-2.853c-2.475,0-4.665,0.95-6.567,2.853L2.856,131.327C0.95,133.23,0,135.42,0,137.893
+                c0,2.474,0.953,4.665,2.856,6.57l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854l133.054-133.046 c1.902-1.903,2.847-4.093,2.847-6.565c0-2.474-0.951-4.661-2.847-6.567L267.808,117.053z" />
+                </g>
+            </svg>
+        </div>
+    </div>
     <footer class="contact">
 
         <div class="icon house">
@@ -309,12 +342,12 @@
         </div>
 
         <div class="icon linkedin">
-            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/estefania-priscila-alvarez-palma">  <i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.linkedin.com/in/estefania-priscila-alvarez-palma">estefania-priscila-alvarez-palma</a>
         </div>
 
         <div class="icon github">
-            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/fanyalvarez"><i class="fa-brands fa-github"></i></a>
             <a href="https://github.com/fanyalvarez">fanyalvarez</a>
         </div>
     </footer>
