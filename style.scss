@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-$principal: rgb(236, 217, 225);
+$principal: rgb(219, 198, 207);
 $pinkBGdark: rgb(224, 202, 212);
 $pinkText: rgb(202, 154, 176);
 $border: rgb(212, 145, 145);
-$texth3: 45px;
+$texth3: 300%;
 $textsize: 19px;
-$white: #f7eee5;
+$white: #ebe2d9;
 $border-rad: 25px;
 $black: #474543;
 
@@ -22,9 +22,6 @@ $black: #474543;
 
 body {
     background-color: $white;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
 }
 
 h3 {
@@ -33,16 +30,19 @@ h3 {
     color: $white;
     text-align: center;
     font-size: $texth3;
-    font-weight: 900;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    margin: 5% auto;
+    word-wrap: break-word;
 }
 
 h4 {
     text-align: center;
     font-size: 30px;
     color: $pinkText;
-    margin: 5% 0 60px;
+    margin: auto;
+    width: 90vw;
 }
 
 a {
@@ -52,13 +52,11 @@ a {
 }
 
 .front {
-    position: absolute;
-    width: 98%;
-    height: 95vh;
+    // width: 99vw;
+    height: 96vh;
     background-color: $principal;
     text-align: center;
     margin-bottom: 2%;
-
 
     .letters {
         height: 100vh;
@@ -69,122 +67,127 @@ a {
     }
 
     .title {
-        padding: 10px;
-        margin: 2px;
-        font-size: 70px;
+        font-size: calc(1em + 4vw);
         letter-spacing: 10px;
         font-family: 'Poppins', sans-serif;
         font-weight: 100;
     }
 
     .title-name {
-        padding: 10px;
-        margin: 2px;
+        margin: 1%;
         font-family: 'Great Vibes', cursive;
-        font-size: 9em;
-        font-weight: 100;
+        font-size: calc(1em + 10vw);
     }
 }
 
 .arrow {
 
     svg {
+        margin: 0;
         z-index: 3;
         position: relative;
-        top: 48em;
-        left: 55em;
-        width: 6%;
+        left:  45.95vw;
+        bottom: 5em;
+        width: 16vh;
     }
 }
 
 .contents {
-    margin: 39% 5% 0;
-    padding: 20px 0;
-    height: 60vh;
-    text-align: center;
+    margin: 8% auto 5%;
+    width: 45vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     .container-one {
         display: flex;
         justify-content: space-evenly;
-        margin: 2% 15%;
+        flex-wrap: wrap;
+        margin: 2%;
     }
 
     .container-two {
         display: flex;
         justify-content: space-between;
-        margin: 2% 18%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2%;
+
+        .p-interno {
+            margin: 0 10vw;
+        }
     }
 
     .container-three {
         display: flex;
         justify-content: space-evenly;
-        margin: 2% 15%;
+        flex-wrap: wrap;
+        margin: 2%;
     }
 
     p {
         border-radius: 15px;
         background-color: $pinkBGdark;
-        margin: 10px;
         padding: 20px;
         font-weight: 500;
         font-size: $textsize;
         cursor: pointer;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
+
+    p:hover {
+        background-color: $border;
+    }
 }
 
 .aboutme {
-    @include flex-align-center;
-    justify-content: center;
-    width: auto;
-    height: fit-content;
-    padding: 20px;
-    margin: 5% 4%;
+    width: 80vw;
+    margin: 6% auto 9%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
 
     .container-photo {
-        margin: 4% auto;
+        margin-right: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
+        .center {
             border-radius: 30%;
             border: 7px solid $border;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         }
     }
 
-    div {
-        padding: 0;
-        margin: 20px 0;
-        width: 90%;
+    .container-description {
+        width: 50em;
 
         .hello {
             color: $pinkText;
             font-weight: 900;
             font-size: 4em;
-            margin: 0 25px 45px;
+            margin: 0;
+            text-align: left;
         }
 
-        .description {
-            font-size: 22px;
-            text-align: justify;
-            margin: 22px 7%;
+        .container-descrip {
+            margin-left: 3vw;
+
+            .text-description {
+                font-size: 22px;
+                text-align: justify;
+            }
         }
     }
 }
 
 .skills {
-    height: 80vh;
-    margin: 2% 5% 3%;
+    margin: 5%;
 
     .container-skills {
         column-count: 3;
-        column-width: 100px;
+        column-width: 20vw;
     }
 
     .icon {
@@ -199,7 +202,6 @@ a {
         margin: 10px;
         width: 50px;
         height: 50px;
-        font-size: 25px;
         @include flex-align-center;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
@@ -211,58 +213,62 @@ a {
     }
 }
 
-.text-project {
-    margin: 45px 5%;
-}
-
 .projects {
-    margin: 4% 5% 6%;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
     background-color: $pinkBGdark;
     border-radius: $border-rad;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
-    h2 {
-        font-size: 4em;
+    h5 {
+        font-size: calc(1em + 5vw);
         color: $white;
         font-family: 'Great Vibes', cursive;
         letter-spacing: 8px;
         text-align: center;
+        margin: 4% 0;
     }
 
     .container-project-img {
         background-color: $white;
-        width: 80%;
-        margin: 0 auto 10%;
+        margin: 0 3% 10%;
         border-radius: $border-rad;
-        padding: 50px;
+        padding: 5%;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
         p {
             text-align: center;
-            font-size: 1.3em;
-            margin-bottom: 50px;
+            font-size: calc(1.8vw + .5em);
+            margin: 0 0 5%;
         }
 
         img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+        }
+
+        img:hover {
+            scale: 1.01;
         }
 
     }
 }
 
 .education {
-    height: fit-content;
-    margin: 7% 5% 4%;
+    margin: 6% auto;
     @include flex-align-center;
-    flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
 
     .container-education {
         @include flex-align-center;
-        width: fit-content;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
 
         .languages {
             @include flex-align-center;
@@ -271,13 +277,13 @@ a {
 
         .edu-name {
             text-align: center;
-            padding: auto;
+            padding: 1%;
             font-size: 40px;
             font-weight: 900;
             color: $white;
             letter-spacing: 7px;
             text-align: center;
-            width: 10em;
+            width: 300px;
             margin: 0;
             box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
         }
@@ -286,23 +292,21 @@ a {
             display: flex;
 
             .text-edu {
-                text-align: center;
                 letter-spacing: 1.5px;
-                width: 10vh;
+                width: 15vh;
                 margin: 20px;
                 color: $black;
                 background-color: $pinkBGdark;
                 border-radius: 30px 0 0 30px;
                 padding: 20px;
-                font-weight: 600;
                 font-size: $textsize;
                 box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
             }
 
             .text-description {
                 letter-spacing: 1.5px;
-                width: 15em;
-                margin: 20px 10px;
+                width: 20vh;
+                margin: 20px 0;
                 color: $black;
                 background-color: $pinkBGdark;
                 border-radius: 0 30px 30px 0;
@@ -316,29 +320,36 @@ a {
 }
 
 .certificate {
-    height: fit-content;
-    margin: 5%;
-    text-align: center;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10vh auto;
+    background-color: $pinkBGdark;
+    border-radius: $border-rad;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
     .container-certif {
-        background-color: $pinkBGdark;
-        height: fit-content;
-        padding: 5%;
-        @include flex-align-center;
-        border-radius: $border-rad;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 3vh;
+
+        div {
+
+            img {
+                cursor: pointer;
+                max-width: 100%;
+                min-width: 90%;
+                height: auto;
+            }
+
+            img:hover {
+                transform: scale(1.3);
+            }
+        }
     }
 
-    img {
-        margin: auto;
-        display: block;
-        width: 30%;
-        height: 30%;
-        cursor: pointer;
-    }
-
-    img:hover {
-        transform: scale(1.3);
-    }
 }
 
 .contactme {
@@ -360,16 +371,20 @@ a {
             z-index: 3;
             position: relative;
             top: -5em;
-            width: 6%;
+            width: 7vh;
         }
     }
 }
 
 .contact {
+    width: 80vw;
     padding: 10px 0;
     display: flex;
+    text-align: center;
+    align-items: center;
     justify-content: space-evenly;
-    margin-top: 2%;
+    flex-wrap: wrap;
+    margin: auto;
 
     .icon {
         @include flex-align-center;
@@ -391,7 +406,7 @@ a {
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     }
 
-    i:hover{
+    i:hover {
         color: $border;
     }
 

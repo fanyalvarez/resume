@@ -5,28 +5,28 @@
 }
 
 body {
-  background-color: #f7eee5;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
+  background-color: #ebe2d9;
 }
 
 h3 {
   background-color: rgb(224, 202, 212);
   border-radius: 25px;
-  color: #f7eee5;
+  color: #ebe2d9;
   text-align: center;
-  font-size: 45px;
-  font-weight: 900;
-  letter-spacing: 7px;
+  font-size: 300%;
+  letter-spacing: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  width: 90vw;
+  margin: 5% auto;
+  word-wrap: break-word;
 }
 
 h4 {
   text-align: center;
   font-size: 30px;
   color: rgb(202, 154, 176);
-  margin: 5% 0 60px;
+  margin: auto;
+  width: 90vw;
 }
 
 a {
@@ -36,10 +36,8 @@ a {
 }
 
 .front {
-  position: absolute;
-  width: 98%;
-  height: 95vh;
-  background-color: rgb(236, 217, 225);
+  height: 96vh;
+  background-color: rgb(219, 198, 207);
   text-align: center;
   margin-bottom: 2%;
 }
@@ -51,113 +49,112 @@ a {
   flex-direction: column;
 }
 .front .title {
-  padding: 10px;
-  margin: 2px;
-  font-size: 70px;
+  font-size: calc(1em + 4vw);
   letter-spacing: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
 }
 .front .title-name {
-  padding: 10px;
-  margin: 2px;
+  margin: 1%;
   font-family: "Great Vibes", cursive;
-  font-size: 9em;
-  font-weight: 100;
+  font-size: calc(1em + 10vw);
 }
 
 .arrow svg {
+  margin: 0;
   z-index: 3;
   position: relative;
-  top: 48em;
-  left: 55em;
-  width: 6%;
+  left: 45.95vw;
+  bottom: 5em;
+  width: 16vh;
 }
 
 .contents {
-  margin: 39% 5% 0;
-  padding: 20px 0;
-  height: 60vh;
-  text-align: center;
+  margin: 8% auto 5%;
+  width: 45vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .contents .container-one {
   display: flex;
   justify-content: space-evenly;
-  margin: 2% 15%;
+  flex-wrap: wrap;
+  margin: 2%;
 }
 .contents .container-two {
   display: flex;
   justify-content: space-between;
-  margin: 2% 18%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2%;
+}
+.contents .container-two .p-interno {
+  margin: 0 10vw;
 }
 .contents .container-three {
   display: flex;
   justify-content: space-evenly;
-  margin: 2% 15%;
+  flex-wrap: wrap;
+  margin: 2%;
 }
 .contents p {
   border-radius: 15px;
   background-color: rgb(224, 202, 212);
-  margin: 10px;
   padding: 20px;
   font-weight: 500;
   font-size: 19px;
   cursor: pointer;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
+.contents p:hover {
+  background-color: rgb(212, 145, 145);
+}
 
 .aboutme {
+  width: 80vw;
+  margin: 6% auto 9%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 20px;
-  margin: 5% 4%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .aboutme .container-photo {
-  margin: 4% auto;
+  margin-right: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.aboutme .container-photo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.aboutme .container-photo .center {
   border-radius: 30%;
   border: 7px solid rgb(212, 145, 145);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-.aboutme div {
-  padding: 0;
-  margin: 20px 0;
-  width: 90%;
+.aboutme .container-description {
+  width: 50em;
 }
-.aboutme div .hello {
+.aboutme .container-description .hello {
   color: rgb(202, 154, 176);
   font-weight: 900;
   font-size: 4em;
-  margin: 0 25px 45px;
+  margin: 0;
+  text-align: left;
 }
-.aboutme div .description {
+.aboutme .container-description .container-descrip {
+  margin-left: 3vw;
+}
+.aboutme .container-description .container-descrip .text-description {
   font-size: 22px;
   text-align: justify;
-  margin: 22px 7%;
 }
 
 .skills {
-  height: 80vh;
-  margin: 2% 5% 3%;
+  margin: 5%;
 }
 .skills .container-skills {
   -moz-column-count: 3;
        column-count: 3;
-  -moz-column-width: 100px;
-       column-width: 100px;
+  -moz-column-width: 20vw;
+       column-width: 20vw;
 }
 .skills .icon {
   display: flex;
@@ -171,7 +168,6 @@ a {
   margin: 10px;
   width: 50px;
   height: 50px;
-  font-size: 25px;
   display: flex;
   align-items: center;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -182,59 +178,58 @@ a {
   color: rgb(202, 154, 176);
 }
 
-.text-project {
-  margin: 45px 5%;
-}
-
 .projects {
-  margin: 4% 5% 6%;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
   background-color: rgb(224, 202, 212);
   border-radius: 25px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
-.projects h2 {
-  font-size: 4em;
-  color: #f7eee5;
+.projects h5 {
+  font-size: calc(1em + 5vw);
+  color: #ebe2d9;
   font-family: "Great Vibes", cursive;
   letter-spacing: 8px;
   text-align: center;
+  margin: 4% 0;
 }
 .projects .container-project-img {
-  background-color: #f7eee5;
-  width: 80%;
-  margin: 0 auto 10%;
+  background-color: #ebe2d9;
+  margin: 0 3% 10%;
   border-radius: 25px;
-  padding: 50px;
+  padding: 5%;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .projects .container-project-img p {
   text-align: center;
-  font-size: 1.3em;
-  margin-bottom: 50px;
+  font-size: calc(1.8vw + 0.5em);
+  margin: 0 0 5%;
 }
 .projects .container-project-img img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+}
+.projects .container-project-img img:hover {
+  scale: 1.01;
 }
 
 .education {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 7% 5% 4%;
+  margin: 6% auto;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .education .container-education {
   display: flex;
   align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
 }
 .education .container-education .languages {
   display: flex;
@@ -243,13 +238,13 @@ a {
 }
 .education .container-education .edu-name {
   text-align: center;
-  padding: auto;
+  padding: 1%;
   font-size: 40px;
   font-weight: 900;
-  color: #f7eee5;
+  color: #ebe2d9;
   letter-spacing: 7px;
   text-align: center;
-  width: 10em;
+  width: 300px;
   margin: 0;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
@@ -257,22 +252,20 @@ a {
   display: flex;
 }
 .education .container-education .container-edu .text-edu {
-  text-align: center;
   letter-spacing: 1.5px;
-  width: 10vh;
+  width: 15vh;
   margin: 20px;
   color: #474543;
   background-color: rgb(224, 202, 212);
   border-radius: 30px 0 0 30px;
   padding: 20px;
-  font-weight: 600;
   font-size: 19px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .education .container-education .container-edu .text-description {
   letter-spacing: 1.5px;
-  width: 15em;
-  margin: 20px 10px;
+  width: 20vh;
+  margin: 20px 0;
   color: #474543;
   background-color: rgb(224, 202, 212);
   border-radius: 0 30px 30px 0;
@@ -283,30 +276,28 @@ a {
 }
 
 .certificate {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 5%;
-  text-align: center;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10vh auto;
+  background-color: rgb(224, 202, 212);
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 .certificate .container-certif {
-  background-color: rgb(224, 202, 212);
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 5%;
   display: flex;
-  align-items: center;
-  border-radius: 25px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3vh;
 }
-.certificate img {
-  margin: auto;
-  display: block;
-  width: 30%;
-  height: 30%;
+.certificate .container-certif div img {
   cursor: pointer;
+  max-width: 100%;
+  min-width: 90%;
+  height: auto;
 }
-.certificate img:hover {
+.certificate .container-certif div img:hover {
   transform: scale(1.3);
 }
 
@@ -330,14 +321,18 @@ a {
   z-index: 3;
   position: relative;
   top: -5em;
-  width: 6%;
+  width: 7vh;
 }
 
 .contact {
+  width: 80vw;
   padding: 10px 0;
   display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: space-evenly;
-  margin-top: 2%;
+  flex-wrap: wrap;
+  margin: auto;
 }
 .contact .icon {
   display: flex;
@@ -347,7 +342,7 @@ a {
 }
 .contact i {
   background-color: rgb(224, 202, 212);
-  color: #f7eee5;
+  color: #ebe2d9;
   border-radius: 50%;
   padding: 10px;
   margin: 10px;
